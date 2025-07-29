@@ -171,7 +171,8 @@
 		            </div>
 			<div class="form-group popup-mesbox">
 				<label>Enquiry:</label>
-          <textarea name="message" class="popup-nqp"></textarea>
+          <textarea name="message" class="form-control"></textarea>
+          
         </div>
 			<!--<div class="form-group popup-mesbox">
 				<label>Address:</label>
@@ -188,7 +189,7 @@
           data:$("#submit-form").serialize(),
           method:"post",
           success:function (response){
-          alert("Our Technical will contact you shortly. Thank you!")
+          alert("Our technical team will contact you shortly to assist you further.")
           window.location.reload()
           //window.location.href="https://google.com"
           },
@@ -587,9 +588,7 @@
       </div>
       </div>
       <div class="col-md-12 mb-m">
-        <div class="form-group">
-          <textarea name="message" placeholder="Enquiry" class="nqp"></textarea>
-        </div>
+        
       </div>
     </div>
     <button type="submit" class="owel-btn owel-btn-blue">Submit</button>
