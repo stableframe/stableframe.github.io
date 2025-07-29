@@ -38,15 +38,7 @@
       e.preventDefault();
     });
 
-    // Disable key shortcuts (Ctrl+C, Ctrl+X, Ctrl+S, Ctrl+U, F12, etc.)
-    document.addEventListener('keydown', function(e) {
-      if (
-        (e.ctrlKey && (e.key === 'c' || e.key === 'x' || e.key === 's' || e.key === 'u')) ||
-        e.key === 'F12' || e.key === 'PrintScreen'
-      ) {
-        e.preventDefault();
-      }
-    });
+   
 
     // Disable cut/copy/paste
     document.addEventListener('cut', e => e.preventDefault());
@@ -168,7 +160,7 @@
 		            </div>
 			<div class="form-group popup-mesbox">
 				<label>Enquiry:</label>
-          <textarea name="message" class="popup-nqp"></textarea>
+          <textarea  type='text' name="text" name="message" class="popup-nqp"></textarea>
         </div>
 			<!--<div class="form-group popup-mesbox">
 				<label>Address:</label>
@@ -185,7 +177,7 @@
 			data:$("#submit-form").serialize(),
 			method:"post",
 			success:function (response){
-			alert("Our HR will contact you shortly. Thank you!")
+			alert("Our Technical will contact you shortly. Thank you!")
 			window.location.reload()
 			//window.location.href="https://google.com"
 			},
